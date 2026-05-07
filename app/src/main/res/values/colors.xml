@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Guia de Estilos Calcetinder -->
+    <color name="green_500">#FF4CAF50</color>   <!-- Verde Primario - Like/Guardar/CTA -->
+    <color name="green_700">#FF2E7D32</color>   <!-- Verde Oscuro - TopBar/Cabeceras -->
+    <color name="red_500">#FFFF5252</color>      <!-- Rojo Secundario - Dislike/Eliminar -->
+    <color name="blue_500">#FF2196F3</color>     <!-- Azul Accion - Editar/Info -->
+    <color name="grey_fondo">#FFF5F5F5</color>  <!-- Gris Fondo - Fondo de pantallas -->
+    <color name="grey_bordes">#FFBDBDBD</color> <!-- Gris Bordes - Separadores/Inputs -->
+    <color name="green_placeholder">#FFC8E6C9</color> <!-- Verde claro placeholder imagen -->
+</resources>
