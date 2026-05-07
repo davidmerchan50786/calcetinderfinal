@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calcetinder</string>
+    <string name="calcetinder">Calcetinder</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="login">Entrar</string>
+    <string name="registro">Crear cuenta</string>
+    <string name="nombre">Tu nombre</string>
+    <string name="ciudad">Tu ciudad</string>
+    <string name="crear_calcet">Crear calcetín</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="like">Me gusta</string>
+    <string name="dislike">No me gusta</string>
+    <string name="hint_email">tu email</string>
+    <string name="hint_contrasena">tu contraseña</string>
+    <string name="hint_nombre">tu nombre</string>
+    <string name="hint_ciudad">tu ciudad</string>
+    <string name="login_subtitulo">Inicia Sesión</string>
+    <string name="bienvenida">Bienvenido a Calcetinder</string>
+    <string name="swipe_instrucciones">Desliza para ver más calcetines</string>
+    <string name="swipe_vacio_titulo">No hay más calcetines</string>
+    <string name="swipe_vacio_desc">No quedan calcetines disponibles</string>
+    <string name="dialog_nuevo_titulo">Nuevo calcetín</string>
+    <string name="dialog_editar_titulo">Editar calcetín</string>
+    <string name="hint_nombre_calcetin">Nombre del calcetín</string>
+    <string name="hint_descripcion">Descripción</string>
+    <string name="hint_color">Color</string>
+    <string name="hint_material">Material</string>
+    <string name="btn_imagen">Añadir foto</string>
+    <string name="toast_guardado">Calcetín guardado</string>
+    <string name="toast_actualizado">Calcetín actualizado</string>
+    <string name="toast_eliminado">Calcetín eliminado</string>
+    <string name="toast_like">¡Like!</string>
+    <string name="toast_campos_vacios">Rellena todos los campos</string>
+    <string name="toast_email_invalido">El email no es válido</string>
+    <string name="toast_contrasena_corta">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="toast_nombre_corto">El nombre debe tener al menos 2 caracteres</string>
+    <string name="toast_registro_ok">Cuenta creada correctamente</string>
+    <string name="toast_login_error">Email o contraseña incorrectos</string>
+</resources>
