@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph" app:startDestination="@id/loginFragment">
+    <fragment android:id="@+id/loginFragment"
+        android:name="com.example.calcetinder.ui.login.LoginFragment"
+        android:label="Login" tools:layout="@layout/fragment_login">
+        <action android:id="@+id/action_loginFragment_to_registroFragment" app:destination="@id/registroFragment" />
+        <action android:id="@+id/action_loginFragment_to_swipeFragment"
+            app:destination="@id/swipeFragment" app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:id="@+id/registroFragment"
+        android:name="com.example.calcetinder.ui.login.RegistroFragment"
+        android:label="Registro" tools:layout="@layout/fragment_registro">
+        <action android:id="@+id/action_registroFragment_to_swipeFragment"
+            app:destination="@id/swipeFragment" app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:id="@+id/swipeFragment"
+        android:name="com.example.calcetinder.ui.swipe.SwipeFragment"
+        android:label="Calcetinder" tools:layout="@layout/fragment_swipe">
+        <action android:id="@+id/action_swipeFragment_to_miscalcetinesFragment" app:destination="@id/miscalcetinesFragment" />
+        <action android:id="@+id/action_swipeFragment_to_matchesFragment" app:destination="@id/matchesFragment" />
+        <action android:id="@+id/action_swipeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" app:popUpTo="@id/swipeFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:id="@+id/miscalcetinesFragment"
+        android:name="com.example.calcetinder.ui.miscalcetines.MisCalcetinesFragment"
+        android:label="Mis Calcetines" tools:layout="@layout/fragment_miscalcetines" />
+    <fragment android:id="@+id/matchesFragment"
+        android:name="com.example.calcetinder.ui.matches.MatchesFragment"
+        android:label="Mis Matches" tools:layout="@layout/fragment_matches" />
+</navigation>
