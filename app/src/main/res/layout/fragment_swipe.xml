@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/grey_fondo">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Imagen calcetin -->
+            <ImageView
+                android:id="@+id/iv_calcetin"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:background="@color/green_placeholder"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="imagen calcetin" />
+
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargando..."
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF616161"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tv_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="#FF757575"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="#FF757575" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Instruccion critica -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/swipe_instrucciones"
+        android:textSize="11sp"
+        android:textColor="#FF9E9E9E"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dislike"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:text="@string/dislike"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:backgroundTint="@color/red_500"
+            app:cornerRadius="26dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_like"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="@string/like"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:backgroundTint="@color/green_500"
+            app:cornerRadius="26dp" />
+    </LinearLayout>
+</LinearLayout>
