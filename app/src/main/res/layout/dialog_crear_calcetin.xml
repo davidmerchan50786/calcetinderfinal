@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:background="@color/green_500"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="preview imagen" />
+
+    <Button
+        android:id="@+id/btn_seleccionar_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar imagen"
+        android:layout_marginBottom="16dp" />
+
+    <EditText android:id="@+id/et_nombre"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Nombre del calcetín" android:layout_marginBottom="12dp" />
+
+    <EditText android:id="@+id/et_descripcion"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Descripción" android:layout_marginBottom="12dp" />
+
+    <EditText android:id="@+id/et_color"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Color" android:layout_marginBottom="12dp" />
+
+    <EditText android:id="@+id/et_material"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Material" />
+</LinearLayout>
