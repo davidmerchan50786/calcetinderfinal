@@ -106,7 +106,7 @@ object Seeder {
                         "cuál era cuál. Ana intenta que encuentre pareja aunque no sea " +
                         "el original. A estas alturas cualquier blanco sirve.",
                 color = "Blanco", material = "Algodón básico",
-                imagenUri = img("sock_verde")))
+                imagenUri = img("sock_blanco")))
 
             repo.insertarCalcetin(Calcetin(usuarioId = id4,
                 nombre = "El Gris Jubilado",
@@ -114,7 +114,7 @@ object Seeder {
                         "en el talón. Este sigue en perfecto estado pero se quedó sin destino. " +
                         "Ana no tiene corazón para tirarlo. Busca un nuevo compañero de cajón.",
                 color = "Gris", material = "Algodón 80% Poliéster 20%",
-                imagenUri = img("sock_negro")))
+                imagenUri = img("sock_gris")))
 
             prefs.edit().putBoolean("seeded", true).apply()
         }
