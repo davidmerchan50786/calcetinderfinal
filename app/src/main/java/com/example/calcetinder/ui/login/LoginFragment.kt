@@ -49,7 +49,7 @@ class LoginFragment : Fragment() {
             when {
                 e.isEmpty() || p.isEmpty() ->
                     Toast.makeText(context, getString(R.string.toast_campos_vacios), Toast.LENGTH_SHORT).show()
-                !e.contains("@") ->
+                !android.util.Patterns.EMAIL_ADDRESS.matcher(e).matches() ->
                     Toast.makeText(context, getString(R.string.toast_email_invalido), Toast.LENGTH_SHORT).show()
                 p.length < 6 ->
                     Toast.makeText(context, getString(R.string.toast_contrasena_corta), Toast.LENGTH_SHORT).show()
